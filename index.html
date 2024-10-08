@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <a href=""><h1>Logo</h1></a>
+        <a href="" class="logo"><h1>Logo</h1></a>
         <nav>
             <a href="">About me</a>
             <a href="">Contáctame</a>
@@ -16,27 +16,38 @@
         </nav>
     </header>
     <main>
+        <p>¿Tienes alguna duda?</p>
         <fieldset>
             <legend>Contáctame</legend>
             <form action="">
                 <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Fulanito De Tal">
+                <input type="text" name="nombre" id="nombre" placeholder="Fulanito De Tal" required>
                 
                 <label for="correo">Correo:</label>
-                <input type="email" name="correo" id="correo" placeholder="ejemplo@dominio.com">
+                <input type="email" name="correo" id="correo" placeholder="ejemplo@dominio.com" required>
                 
                 <label for="telefono">Teléfono:</label>
-                <input type="tel" name="telefono" id="telefono" placeholder="##########">
+                <input type="tel" name="telefono" id="telefono" placeholder="##########" readonly>
+                
+                <label for="localidad">¿Vives en Obregón?:</label>
+                <div>
+                    <input type="radio" name="localidad" id="si" value="si">
+                    <label for="si">Sí</label>
+                    <input type="radio" name="localidad" id="no" value="no">
+                    <label for="no">Ño</label>
+                </div>
                 
                 <label for="mensaje">Mensaje:</label>
-                <textarea name="mensaje" id="mensaje" cols="50" rows="15"></textarea>
+                <textarea name="mensaje" id="mensaje" cols="50" rows="15" placeholder="Aún sigue en desarrollo..." disabled></textarea>
 
                 <input type="submit" value="Enviar">
             </form>
         </fieldset>
     </main>
     <footer>
-        Copyright (R) - Diego Valenzuela
+        <p>
+            Copyright (R) - Diego Valenzuela
+        </p>
     </footer>
 </body>
 </html>

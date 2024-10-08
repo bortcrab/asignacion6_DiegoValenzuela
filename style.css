@@ -29,6 +29,94 @@ form {
 }
 
 form>input,
-form>textarea {
+form>textarea,
+form>div {
     margin: 0 0 1.3rem 0;
+}
+
+/* AQUÍ EMPIEZA LO BUENO :D */
+/* DIAPOSITIVA 1*/
+.logo:active {
+    color: white;
+}
+
+input:checked {
+    height: 1.5rem;
+}
+
+textarea:disabled {
+    font-style: italic;
+}
+
+input:enabled {
+    color: blue;
+}
+
+p:first-child {
+    font-weight: bold;
+}
+
+/* DIAPOSITIVA 2*/
+input:optional {
+    background-color: lavender;
+}
+
+input:read-only {
+    border: 1px solid red;
+}
+
+input:read-write {
+    border: 2px dotted orange;
+    border-radius: 10px;
+}
+
+input:required {
+    padding: 1rem;
+}
+
+/*Esto modifica al footer*/
+p:only-child {
+    font-family: fantasy;
+}
+
+/* DIAPOSITIVA 3*/
+p:only-of-type {
+    font-style: italic;
+}
+
+input:invalid {
+    font-family: cursive;
+}
+
+input:last-child {
+    border-radius: 50%;
+}
+
+:not(input) {
+    text-decoration: underline;
+}
+
+a:link {
+    background-color: crimson;
+}
+
+/* PSEUDOELEMENTOS */
+p::after {
+    content: url("https://media1.tenor.com/m/7QtqynAYyY4AAAAC/silly-guy-silly-cat.gif");
+}
+
+p::before {
+    content: url("https://th.bing.com/th/id/OIP.dlZjj3eXFzMI2yqOjnG0eAAAAA?rs=1&pid=ImgDetMain");
+}
+
+label::first-letter {
+    font-size: 2rem;
+}
+
+p::first-line {
+    color: slateblue;
+}
+
+p::selection {
+    color: coral;
 }
